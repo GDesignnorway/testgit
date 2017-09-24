@@ -5,7 +5,7 @@ import './App.css';
 
 
 let business = {
-  imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
+    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
     name: 'MarginOtto Pizzeria',
     address: '1010 Paddington Way',
     city: 'Flavortown',
@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <h1>ravenous</h1>
         <SearchBar />
-        <BusinessList  propName={businesses}/>
+        <BusinessList businesses={businesses}/>
       </div>
     );
   }
